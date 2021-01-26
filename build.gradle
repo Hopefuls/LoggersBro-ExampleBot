@@ -1,0 +1,18 @@
+plugins {
+    id 'application'
+}
+
+group 'me.hopedev'
+version '1.0-ExampleVersion'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'org.javacord:javacord:3.1.2'
+    implementation 'com.github.Hopefuls:topggwebhooks4j:1.3.5'
+}
+mainClassName='me.hopedev.loggersbro.LoggersBro'
